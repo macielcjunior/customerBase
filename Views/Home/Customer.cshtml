@@ -1,0 +1,32 @@
+@using customerBase.Models;
+@model Customer;
+
+<h3>Customer Register</h3>
+<div class="container">
+          <form action="/cadastre-se" method="post" id="form-cadastro" data-toggle="validator" role="form">
+              <div class="form-row">
+                  <div class="form-group col-md-6">
+                      <label class="" for="inputName">First Name</label>
+                      <input type="text" name="name" class="form-control" id="inputName" placeholder="First Name" required>
+                  </div>
+                  <div class="form-group col-md-6">
+                      <label class="" for="inputLastName">Last Name</label>
+                      <input type="text" name="LastName" class="form-control" id="inputLastName" placeholder="Last Name" required>
+                  </div>
+              </div>
+              <div class="form-row">
+                  <div class="form-group col-md-4">
+                      <label class="" for="inputEmail">Email</label>
+                      <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Email" required>
+                  </div>
+                  <div class="form-group col-md-4">
+                      <label class="" for="age">Age</label>
+                      <input type="number" name="age" class="form-control" id="age" placeholder="Age" required>
+                  </div>
+                  <div class="form-group col-md-4">
+                      <label class="" for="fone">Fone Number</label>
+                      <input type="text" name="fone" class="form-control" id="fone" placeholder="Fone Number" required>
+                  </div>
+              </div>
+             <button class="btn btn-primary" type="submit">Submit</button>
+          </form>
